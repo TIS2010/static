@@ -329,8 +329,8 @@ class tislibrary{
 				case 'GET':
 					for (var key in body)
 					{
-						if (body[key] instanceof Object) param.push(key+'='+JSON.stringify(body[key]));
-						else param.push(key+'='+body[key]);
+						if (body[key] instanceof Object) param.push(key+'='+encodeURIComponent(JSON.stringify(body[key])));
+						else param.push(key+'='+encodeURIComponent(body[key]));
 					}
 					break;
 				case 'POST':
@@ -488,8 +488,8 @@ class tislibrary{
 			{
 				for (var key in body)
 				{
-					if (body[key] instanceof Object) param.push(key+'='+JSON.stringify(body[key]));
-					else param.push(key+'='+body[key]);
+					if (body[key] instanceof Object) param.push(key+'='+encodeURIComponent(JSON.stringify(body[key])));
+					else param.push(key+'='+encodeURIComponent(body[key]));
 				}
 			}
 			if (param.length!=0) url+='?'+param.join('&');
