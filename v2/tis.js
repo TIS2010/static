@@ -1184,7 +1184,7 @@ class tiscalendar{
 		.append(this.contents);
 	}
 	/* show calendar */
-	show(activedate,showactivedate=true){
+	show(activedate,showactivedate=false){
 		var row=0;
 		var cell=0;
 		var cells={};
