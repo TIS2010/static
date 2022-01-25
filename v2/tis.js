@@ -4125,7 +4125,7 @@ HTMLElement.prototype.initialize=function(){
 				this.attr('pattern','^[1-9][0-9]{3}[\\-.\\/]+([1-9]{1}|0[1-9]{1}|1[0-2]{1})[\\-.\\/]+([1-9]{1}|[0-2]{1}[0-9]{1}|3[01]{1}) [0-9]{1,2}:[0-9]{1,2}$');
 				break;
 			case 'mail':
-				this.attr('pattern','^[0-9A-Za-z]+[0-9A-Za-z._-]*@[0-9A-Za-z]+[0-9A-Za-z._-]*\\.[a-z]+$');
+				this.attr('pattern','^[0-9A-Za-z]+[0-9A-Za-z.!#$%&\'*+\\-\\/?\\\\\\^_`{|}~]*@[0-9A-Za-z]+[0-9A-Za-z._-]*\\.[a-z]+$');
 				break;
 			case 'number':
 				this.attr('pattern','^[0-9,\\-.]+$')
